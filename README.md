@@ -1,26 +1,38 @@
 # Xampane
 
-Xamarin.Forms Layouts library.
+Xamarin.Forms **Layouts** library.
+
+<img src="images/xampane.png" Width="150" />
 
 ### CircularLayout
+
+The CircularLayout is a simple Panel derivative that lays out its children in a **circular** arrangement. It has some useful properties to allow some customization like the Orientation (Clockwise or Counterclockwise).
 
 ![CircularLayout](images/circularlayout.png)
 
 ### DockLayout
 
+The DockLayout allows you to **dock** the child controls to the top, bottom, left or right. By default, the last control, if not given a specific dock position, will fill the remaining space. You can achieve the same with the Grid panel, but for the simpler situations, the DockLayout will be easier to use. Use the DockLayout whenever you need to dock one or several controls to one of the sides, like for dividing up the screen into specific areas.
+
 ![DockLayout](images/docklayout.png)
 
 ### HexLayout
+
+A panel that arranges the elements in a **honeycomb pattern**.
 
 ![HexLayout](images/hexlayout.png)
 
 ### UniformGrid
 
+The UniformGrid is just like the Grid, with the possibility of multiple rows and columns, but with one important difference: All rows and columns will have the **same size**. Use this when you need the Grid behavior without the need to specify different sizes for the rows and columns.
+
 ![UniformGrid](images/uniformgrid.png)
 
 ### WrapLayout
 
-![DockLayout](images/wraplayout.png)
+The WrapLayout will position each of its child controls next to the other, horizontally (default) or vertically, until there is no more room, where it will **wrap** to the next line and then continue. Use it when you want a vertical or horizontal collection controls that automatically wraps when there's no more room.
+
+![WrapLayout](images/wraplayout.png)
 
 ## Feedback
 
