@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Javier Suárez Ruiz</Authors>
+    <Product />
+    <PackageTags>Xamarin, Xamarin.Forms, Layout, Panel, Community, Plugin</PackageTags>
+    <Description>Xamarin Forms Layouts Library</Description>
+    <PackageProjectUrl>https://github.com/jsuarezruiz/Xampane</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/jsuarezruiz/Xampane/blob/master/LICENSE</PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/jsuarezruiz/Xampane</RepositoryUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/jsuarezruiz/Xampane/master/images/xampane.png</PackageIconUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="4.1.0.673156" />
+  </ItemGroup>
+
+</Project>

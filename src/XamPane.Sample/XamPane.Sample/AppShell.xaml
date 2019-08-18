@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell 
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:xampane="clr-namespace:XamPane;assembly=XamPane"
+    xmlns:polygon="clr-namespace:Xamarin.Forms.PolygonFrame;assembly=Xamarin.Forms.PolygonFrame"
+    x:Class="XamPane.Sample.AppShell">
+    <Shell.Resources>
+        <ResourceDictionary>
+
+            <Style TargetType="BoxView">
+                <Setter Property="HeightRequest" Value="100" />
+                <Setter Property="WidthRequest" Value="100" />
+            </Style>
+            
+        </ResourceDictionary>
+    </Shell.Resources>
+    <TabBar>
+        <!-- HEXLAYOUT -->
+        <Tab
+            Icon="hexagon.png"
+            Title="Hex">
+            <ShellContent
+                Title="Vertical">
+                <ContentPage
+                    Title="Hexagonal Layout">
+                    <xampane:HexLayout
+                        RowCount="3"
+                        ColumnCount="3"
+                        Orientation="Vertical">
+                        <polygon:PolygonFrame xampane:HexLayout.Row="0" xampane:HexLayout.Column="1" OffsetAngle="90" BackgroundColor="Red"/>
+                        <polygon:PolygonFrame xampane:HexLayout.Row="0" xampane:HexLayout.Column="2" OffsetAngle="90" BackgroundColor="Green"/>
+                        <polygon:PolygonFrame xampane:HexLayout.Row="1" xampane:HexLayout.Column="0" OffsetAngle="90" BackgroundColor="Blue"/>
+                        <polygon:PolygonFrame xampane:HexLayout.Row="1" xampane:HexLayout.Column="1" OffsetAngle="90" BackgroundColor="Yellow"/>
+                        <polygon:PolygonFrame xampane:HexLayout.Row="1" xampane:HexLayout.Column="2" OffsetAngle="90" BackgroundColor="Orange"/>
+                        <polygon:PolygonFrame xampane:HexLayout.Row="2" xampane:HexLayout.Column="1" OffsetAngle="90" BackgroundColor="Purple"/>
+                        <polygon:PolygonFrame xampane:HexLayout.Row="2" xampane:HexLayout.Column="2" OffsetAngle="90" BackgroundColor="Pink"/>
+                    </xampane:HexLayout>
+                </ContentPage>
+            </ShellContent>
+            <ShellContent
+                Title="Horizontal">
+                <ContentPage
+                    Title="Hexagonal Layout">
+                    <xampane:HexLayout 
+                        RowCount="3"
+                        ColumnCount="3" 
+                        Orientation="Horizontal">
+                        <polygon:PolygonFrame xampane:HexLayout.Row="0" xampane:HexLayout.Column="1" BackgroundColor="Red"/>
+                        <polygon:PolygonFrame xampane:HexLayout.Row="1" xampane:HexLayout.Column="0" BackgroundColor="Green"/>
+                        <polygon:PolygonFrame xampane:HexLayout.Row="1" xampane:HexLayout.Column="1" BackgroundColor="Blue"/>
+                        <polygon:PolygonFrame xampane:HexLayout.Row="1" xampane:HexLayout.Column="2" BackgroundColor="Yellow"/>
+                        <polygon:PolygonFrame xampane:HexLayout.Row="2" xampane:HexLayout.Column="0" BackgroundColor="Orange"/>
+                        <polygon:PolygonFrame xampane:HexLayout.Row="2" xampane:HexLayout.Column="1" BackgroundColor="Purple"/>
+                        <polygon:PolygonFrame xampane:HexLayout.Row="2" xampane:HexLayout.Column="2" BackgroundColor="Pink"/>
+                    </xampane:HexLayout>
+                </ContentPage>
+            </ShellContent>
+            <ShellContent
+                Title="Colors">
+                <ContentPage
+                    Title="Hexagonal Layout">
+                    <xampane:HexLayout    
+                        Orientation="Vertical"
+                        RowCount="5" 
+                        ColumnCount="5">
+                        <polygon:PolygonFrame xampane:HexLayout.Row="0" xampane:HexLayout.Column="1" OffsetAngle="90" CornerRadius="6" BackgroundColor="#006699"/>
+                        <polygon:PolygonFrame xampane:HexLayout.Row="0" xampane:HexLayout.Column="2" OffsetAngle="90" CornerRadius="6" BackgroundColor="#0033CC"/>
+                        <polygon:PolygonFrame xampane:HexLayout.Row="0" xampane:HexLayout.Column="3" OffsetAngle="90" CornerRadius="6" BackgroundColor="#3333FF"/>
+                        <polygon:PolygonFrame xampane:HexLayout.Row="1" xampane:HexLayout.Column="0" OffsetAngle="90" CornerRadius="6" BackgroundColor="#00cc99"/>
+                        <polygon:PolygonFrame xampane:HexLayout.Row="1" xampane:HexLayout.Column="1" OffsetAngle="90" CornerRadius="6" BackgroundColor="#00FFFF"/>
+                        <polygon:PolygonFrame xampane:HexLayout.Row="1" xampane:HexLayout.Column="2" OffsetAngle="90" CornerRadius="6" BackgroundColor="#3399FF"/>
+                        <polygon:PolygonFrame xampane:HexLayout.Row="1" xampane:HexLayout.Column="3" OffsetAngle="90" CornerRadius="6" BackgroundColor="#6600FF"/>
+                        <polygon:PolygonFrame xampane:HexLayout.Row="2" xampane:HexLayout.Column="0" OffsetAngle="90" CornerRadius="6" BackgroundColor="#008000"/>
+                        <polygon:PolygonFrame xampane:HexLayout.Row="2" xampane:HexLayout.Column="1" OffsetAngle="90" CornerRadius="6" BackgroundColor="#66FF66"/>
+                        <polygon:PolygonFrame xampane:HexLayout.Row="2" xampane:HexLayout.Column="2" OffsetAngle="90" CornerRadius="6" BackgroundColor="#FFFFFF"/>
+                        <polygon:PolygonFrame xampane:HexLayout.Row="2" xampane:HexLayout.Column="3" OffsetAngle="90" CornerRadius="6" BackgroundColor="#FF66FF"/>
+                        <polygon:PolygonFrame xampane:HexLayout.Row="2" xampane:HexLayout.Column="4" OffsetAngle="90" CornerRadius="6" BackgroundColor="#CC00CC"/>
+                        <polygon:PolygonFrame xampane:HexLayout.Row="3" xampane:HexLayout.Column="0" OffsetAngle="90" CornerRadius="6" BackgroundColor="#99CC00"/>
+                        <polygon:PolygonFrame xampane:HexLayout.Row="3" xampane:HexLayout.Column="1" OffsetAngle="90" CornerRadius="6" BackgroundColor="#FFFF66"/>
+                        <polygon:PolygonFrame xampane:HexLayout.Row="3" xampane:HexLayout.Column="2" OffsetAngle="90" CornerRadius="6" BackgroundColor="#FF7C80"/>
+                        <polygon:PolygonFrame xampane:HexLayout.Row="3" xampane:HexLayout.Column="3" OffsetAngle="90" CornerRadius="6" BackgroundColor="#D60093"/>
+                        <polygon:PolygonFrame xampane:HexLayout.Row="4" xampane:HexLayout.Column="1" OffsetAngle="90" CornerRadius="6" BackgroundColor="#CC9900"/>
+                        <polygon:PolygonFrame xampane:HexLayout.Row="4" xampane:HexLayout.Column="2" OffsetAngle="90" CornerRadius="6" BackgroundColor="#FF3300"/>
+                        <polygon:PolygonFrame xampane:HexLayout.Row="4" xampane:HexLayout.Column="3" OffsetAngle="90" CornerRadius="6" BackgroundColor="#CC0000"/>
+                    </xampane:HexLayout>
+                </ContentPage>
+            </ShellContent>
+        </Tab>
+        <!-- DOCKLAYOUT -->
+        <Tab
+            Icon="dock.png"
+            Title="Dock">
+            <ShellContent
+                Title="Default">
+                <ContentPage
+                    Title="Dock Layout">
+                    <xampane:DockLayout>
+                        <Button xampane:DockLayout.Dock="Top" Text="Top" HeightRequest="50"/>
+                        <Button xampane:DockLayout.Dock="Bottom" Text="Bottom" HeightRequest="50"/>
+                        <Button xampane:DockLayout.Dock="Left" Text="Left" WidthRequest="50" />
+                        <Button xampane:DockLayout.Dock="Right" Text="Right" WidthRequest="50" />
+                        <Button Text="Center" /> 
+                    </xampane:DockLayout>
+                </ContentPage>
+            </ShellContent>
+            <ShellContent
+                Title="LastChildFill">
+                <ContentPage
+                    Title="Dock Layout">
+                    <xampane:DockLayout
+                        LastChildFill="False">
+                        <Button xampane:DockLayout.Dock="Top" Text="Top" HeightRequest="50"/>
+                        <Button xampane:DockLayout.Dock="Bottom" Text="Bottom" HeightRequest="50"/>
+                        <Button xampane:DockLayout.Dock="Left" Text="Left" WidthRequest="60"/>
+                        <Button xampane:DockLayout.Dock="Left" Text="Left" WidthRequest="60"/>
+                        <Button xampane:DockLayout.Dock="Right" Text="Right" WidthRequest="80"/>
+                        <Button xampane:DockLayout.Dock="Right" Text="Right" WidthRequest="80"/>
+                    </xampane:DockLayout>
+                </ContentPage>
+            </ShellContent>
+        </Tab>
+        <!-- CIRCULARLAYOUT -->
+        <Tab
+            Icon="circular.png"
+            Title="Circular">
+            <ShellContent
+                Title="Clockwise">
+                <ContentPage
+                    Title="Circular Layout">
+                    <xampane:CircularLayout
+                        Orientation="Clockwise">
+                        <BoxView Color="Black" CornerRadius="6" WidthRequest="6" HeightRequest="6" />       
+                        <BoxView Color="Red" CornerRadius="12" WidthRequest="12" HeightRequest="12" xampane:CircularLayout.Angle="0" xampane:CircularLayout.Radius="120" />
+                        <BoxView Color="Green" CornerRadius="12" WidthRequest="12" HeightRequest="12" xampane:CircularLayout.Angle="10" xampane:CircularLayout.Radius="120" />
+                        <BoxView Color="Blue" CornerRadius="12" WidthRequest="12" HeightRequest="12" xampane:CircularLayout.Angle="20" xampane:CircularLayout.Radius="120" />
+                        <BoxView Color="Yellow" CornerRadius="12" WidthRequest="12" HeightRequest="12" xampane:CircularLayout.Angle="30" xampane:CircularLayout.Radius="120" />
+                        <Label Text="1" xampane:CircularLayout.Angle="30" xampane:CircularLayout.Radius="90" />
+                        <Label Text="2" xampane:CircularLayout.Angle="60" xampane:CircularLayout.Radius="90" />
+                        <Label Text="3" xampane:CircularLayout.Angle="90" xampane:CircularLayout.Radius="90" />
+                        <Label Text="4" xampane:CircularLayout.Angle="120" xampane:CircularLayout.Radius="90" />
+                        <Label Text="5" xampane:CircularLayout.Angle="150" xampane:CircularLayout.Radius="90" />
+                        <Label Text="6" xampane:CircularLayout.Angle="180" xampane:CircularLayout.Radius="90" />
+                        <Label Text="7" xampane:CircularLayout.Angle="210" xampane:CircularLayout.Radius="90" />
+                        <Label Text="8" xampane:CircularLayout.Angle="240" xampane:CircularLayout.Radius="90" />
+                        <Label Text="9" xampane:CircularLayout.Angle="270" xampane:CircularLayout.Radius="90" />
+                        <Label Text="10" xampane:CircularLayout.Angle="300" xampane:CircularLayout.Radius="90" />
+                        <Label Text="11" xampane:CircularLayout.Angle="330" xampane:CircularLayout.Radius="90" />
+                        <Label Text="12" xampane:CircularLayout.Angle="360" xampane:CircularLayout.Radius="90" />
+                    </xampane:CircularLayout>
+                </ContentPage>
+            </ShellContent>
+            <ShellContent
+                Title="Counterclockwise">
+                <ContentPage
+                    Title="Circular Layout">
+                    <xampane:CircularLayout
+                        Orientation="Counterclockwise">
+                        <BoxView Color="Black" CornerRadius="6" WidthRequest="6" HeightRequest="6" />
+                        <BoxView Color="Red" CornerRadius="12" WidthRequest="12" HeightRequest="12" xampane:CircularLayout.Angle="0" xampane:CircularLayout.Radius="120" />
+                        <BoxView Color="Green" CornerRadius="12" WidthRequest="12" HeightRequest="12" xampane:CircularLayout.Angle="10" xampane:CircularLayout.Radius="120" />
+                        <BoxView Color="Blue" CornerRadius="12" WidthRequest="12" HeightRequest="12" xampane:CircularLayout.Angle="20" xampane:CircularLayout.Radius="120" />
+                        <BoxView Color="Yellow" CornerRadius="12" WidthRequest="12" HeightRequest="12" xampane:CircularLayout.Angle="30" xampane:CircularLayout.Radius="120" />
+                        <Label Text="1" xampane:CircularLayout.Angle="30" xampane:CircularLayout.Radius="90" />
+                        <Label Text="2" xampane:CircularLayout.Angle="60" xampane:CircularLayout.Radius="90" />
+                        <Label Text="3" xampane:CircularLayout.Angle="90" xampane:CircularLayout.Radius="90" />
+                        <Label Text="4" xampane:CircularLayout.Angle="120" xampane:CircularLayout.Radius="90" />
+                        <Label Text="5" xampane:CircularLayout.Angle="150" xampane:CircularLayout.Radius="90" />
+                        <Label Text="6" xampane:CircularLayout.Angle="180" xampane:CircularLayout.Radius="90" />
+                        <Label Text="7" xampane:CircularLayout.Angle="210" xampane:CircularLayout.Radius="90" />
+                        <Label Text="8" xampane:CircularLayout.Angle="240" xampane:CircularLayout.Radius="90" />
+                        <Label Text="9" xampane:CircularLayout.Angle="270" xampane:CircularLayout.Radius="90" />
+                        <Label Text="10" xampane:CircularLayout.Angle="300" xampane:CircularLayout.Radius="90" />
+                        <Label Text="11" xampane:CircularLayout.Angle="330" xampane:CircularLayout.Radius="90" />
+                        <Label Text="12" xampane:CircularLayout.Angle="360" xampane:CircularLayout.Radius="90" />
+                    </xampane:CircularLayout>
+                </ContentPage>
+            </ShellContent>
+        </Tab>
+        <!-- UNIFORMGRID -->
+        <Tab
+            Icon="uniform.png"
+            Title="UniformGrid">
+            <ShellContent>
+                <ContentPage
+                    Title="UniformGrid">
+                    <xampane:UniformGrid>
+                        <BoxView Color="Red" />
+                        <BoxView Color="Yellow" />
+                        <BoxView Color="Orange" />
+                        <BoxView Color="Purple" />
+                        <BoxView Color="Blue" />
+                        <BoxView Color="Green" />
+                        <BoxView Color="LightGreen" />
+                        <BoxView Color="Gray" />
+                        <BoxView Color="Pink" />
+                    </xampane:UniformGrid>
+                </ContentPage>
+            </ShellContent>
+        </Tab>
+        <!-- WRAPLAYOUT -->
+        <Tab
+            Icon="wrap.png"
+            Title="Wrap">
+            <ShellContent
+                Title="Vertical">
+                <ContentPage
+                    Title="Wrap Layout">
+                    <xampane:WrapLayout 
+                        Orientation="Vertical"
+                        Spacing="6"
+                        HorizontalOptions="Center">
+                        <BoxView Color="Red" />
+                        <BoxView Color="Yellow" />
+                        <BoxView Color="Orange" />
+                        <BoxView Color="Purple" />
+                        <BoxView Color="Blue" />
+                        <BoxView Color="Green" />
+                        <BoxView Color="LightGreen" />
+                        <BoxView Color="Gray" />
+                        <BoxView Color="Pink" />
+                    </xampane:WrapLayout>
+                </ContentPage>
+            </ShellContent>
+            <ShellContent
+                Title="Horizontal">
+                <ContentPage
+                    Title="Wrap Layout">
+                    <xampane:WrapLayout 
+                        Orientation="Horizontal"
+                        Spacing="6"
+                        HorizontalOptions="Center">
+                        <BoxView Color="Red" />
+                        <BoxView Color="Yellow" />
+                        <BoxView Color="Orange" />
+                        <BoxView Color="Purple" />
+                        <BoxView Color="Blue" />
+                        <BoxView Color="Green" />
+                        <BoxView Color="LightGreen" />
+                        <BoxView Color="Gray" />
+                        <BoxView Color="Pink" />
+                    </xampane:WrapLayout>
+                </ContentPage>
+            </ShellContent>
+        </Tab>
+    </TabBar>
+</Shell>
