@@ -58,13 +58,13 @@ A panel that arranges the elements in a **honeycomb pattern**.
     RowCount="3"
     ColumnCount="3"
     Orientation="Vertical">
-    <polygon:PolygonFrame Grid.Row="0" Grid.Column="1" OffsetAngle="90" BackgroundColor="Red"/>
-    <polygon:PolygonFrame Grid.Row="0" Grid.Column="2" OffsetAngle="90" BackgroundColor="Green"/>
-    <polygon:PolygonFrame Grid.Row="1" Grid.Column="0" OffsetAngle="90" BackgroundColor="Blue"/>
-    <polygon:PolygonFrame Grid.Row="1" Grid.Column="1" OffsetAngle="90" BackgroundColor="Yellow"/>
-    <polygon:PolygonFrame Grid.Row="1" Grid.Column="2" OffsetAngle="90" BackgroundColor="Orange"/>
-    <polygon:PolygonFrame Grid.Row="2" Grid.Column="1" OffsetAngle="90" BackgroundColor="Purple"/>
-    <polygon:PolygonFrame Grid.Row="2" Grid.Column="2" OffsetAngle="90" BackgroundColor="Pink"/>
+    <polygon:PolygonFrame xampane:HexLayout.Row="0" xampane:HexLayout.Column="1" OffsetAngle="90" BackgroundColor="Red"/>
+    <polygon:PolygonFrame xampane:HexLayout.Row="0" xampane:HexLayout.Column="2" OffsetAngle="90" BackgroundColor="Green"/>
+    <polygon:PolygonFrame xampane:HexLayout.Row="1" xampane:HexLayout.Column="0" OffsetAngle="90" BackgroundColor="Blue"/>
+    <polygon:PolygonFrame xampane:HexLayout.Row="1" xampane:HexLayout.Column="1" OffsetAngle="90" BackgroundColor="Yellow"/>
+    <polygon:PolygonFrame xampane:HexLayout.Row="1" xampane:HexLayout.Column="2" OffsetAngle="90" BackgroundColor="Orange"/>
+    <polygon:PolygonFrame xampane:HexLayout.Row="2" xampane:HexLayout.Column="1" OffsetAngle="90" BackgroundColor="Purple"/>
+    <polygon:PolygonFrame xampane:HexLayout.Row="2" xampane:HexLayout.Column="2" OffsetAngle="90" BackgroundColor="Pink"/>
 </xampane:HexLayout>
 ```
 <img src="images/hexlayout.png" Width="250" />
